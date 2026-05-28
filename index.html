@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raegan Janise — Lifestyle & Content Creator</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink-deep: #c94f7c;
+    --pink-mid: #e07fa4;
+    --pink-soft: #f5c6d8;
+    --pink-blush: #fdf0f5;
+    --pink-light: #fef7fa;
+    --green-aka: #2d6a4f;
+    --green-soft: #e8f4ee;
+    --cream: #fdf8f5;
+    --dark: #1a1218;
+    --mid: #5a4050;
+    --muted: #9e7d8a;
+    --border: rgba(201, 79, 124, 0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(253, 248, 245, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--pink-deep);
+    letter-spacing: 0.01em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--pink-deep); }
+
+  .nav-cta {
+    background: var(--pink-deep);
+    color: white !important;
+    padding: 0.55rem 1.3rem;
+    border-radius: 40px;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500 !important;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+
+  .nav-cta:hover {
+    background: var(--pink-mid);
+    transform: translateY(-1px);
+    color: white !important;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 4rem 5rem 6rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .aka-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--green-soft);
+    border: 1px solid rgba(45, 106, 79, 0.2);
+    color: var(--green-aka);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.4rem 0.9rem;
+    border-radius: 40px;
+    margin-bottom: 1.8rem;
+    width: fit-content;
+  }
+
+  .aka-symbol {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--pink-deep);
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.05;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-name em {
+    color: var(--pink-deep);
+    font-style: italic;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+  }
+
+  .hero-tagline span {
+    color: var(--pink-mid);
+    font-weight: 500;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stat-item { display: flex; flex-direction: column; }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--pink-deep);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--pink-deep);
+    color: white;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: #b03d6a;
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    border: 1.5px solid var(--pink-deep);
+    color: var(--pink-deep);
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-outline:hover {
+    background: var(--pink-deep);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--pink-blush);
+    overflow: hidden;
+  }
+
+  .hero-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .hero-photo-placeholder {
+    width: 85%;
+    height: 90%;
+    background: linear-gradient(160deg, var(--pink-soft) 0%, var(--pink-blush) 50%, #fff 100%);
+    border-radius: 60% 60% 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-photo-placeholder::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(ellipse at 40% 40%, rgba(201,79,124,0.08) 0%, transparent 70%);
+  }
+
+  .photo-icon {
+    font-size: 3rem;
+    color: var(--pink-mid);
+    opacity: 0.5;
+  }
+
+  .photo-label {
+    font-size: 0.75rem;
+    color: var(--pink-mid);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 2rem;
+    line-height: 1.7;
+  }
+
+  .hero-deco-1 {
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--pink-soft);
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+
+  .hero-deco-2 {
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+    width: 45px;
+    height: 45px;
+    background: var(--pink-soft);
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  .hero-deco-3 {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    font-family: 'Playfair Display', serif;
+    font-size: 8rem;
+    font-style: italic;
+    color: var(--pink-soft);
+    opacity: 0.4;
+    line-height: 1;
+    user-select: none;
+  }
+
+  /* ABOUT */
+  .about {
+    padding: 6rem;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--pink-deep);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .about-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: var(--dark);
+  }
+
+  .about-heading em {
+    font-style: italic;
+    color: var(--pink-deep);
+  }
+
+  .about-text {
+    font-size: 1rem;
+    color: var(--mid);
+    line-height: 1.85;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .about-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .pill {
+    padding: 0.45rem 1.1rem;
+    border-radius: 40px;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+  }
+
+  .pill-pink { background: var(--pink-blush); color: var(--pink-deep); border: 1px solid var(--pink-soft); }
+  .pill-green { background: var(--green-soft); color: var(--green-aka); border: 1px solid rgba(45,106,79,0.15); }
+
+  /* NICHES */
+  .niches {
+    padding: 5rem 6rem;
+    background: var(--pink-light);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .section-header .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--pink-deep);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+  }
+
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: var(--dark);
+    line-height: 1.2;
+  }
+
+  .section-header h2 em {
+    font-style: italic;
+    color: var(--pink-deep);
+  }
+
+  .niche-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .niche-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .niche-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--pink-deep);
+  }
+
+  .niche-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(201, 79, 124, 0.12);
+  }
+
+  .niche-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--pink-blush);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .niche-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--dark);
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+  }
+
+  .niche-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* VIRAL NUMBERS */
+  .numbers {
+    padding: 5rem 6rem;
+    background: var(--pink-deep);
+    color: white;
+  }
+
+  .numbers-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .numbers-left .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--pink-soft);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .numbers-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 1.2rem;
+  }
+
+  .numbers-left p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .num-card {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .num-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .num-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--pink-soft);
+    font-weight: 400;
+  }
+
+  /* SERVICES / WORK WITH ME */
+  .services {
+    padding: 6rem;
+    background: white;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3.5rem;
+  }
+
+  .service-card {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .service-card:hover {
+    border-color: var(--pink-mid);
+    transform: translateY(-3px);
+  }
+
+  .service-card.featured {
+    background: var(--pink-blush);
+    border-color: var(--pink-mid);
+  }
+
+  .featured-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--pink-deep);
+    color: white;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .service-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--pink-deep);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .service-price span {
+    font-size: 1rem;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  .service-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.02em;
+  }
+
+  .service-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .service-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .service-features li {
+    font-size: 0.78rem;
+    color: var(--mid);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 300;
+  }
+
+  .service-features li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--pink-mid);
+    flex-shrink: 0;
+  }
+
+  /* PORTFOLIO SECTION */
+  .portfolio {
+    padding: 5rem 6rem;
+    background: var(--cream);
+  }
+
+  .portfolio-note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .portfolio-item {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+  }
+
+  .portfolio-item:hover { transform: translateY(-3px); }
+
+  .portfolio-thumb {
+    height: 180px;
+    background: var(--pink-blush);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-thumb-icon {
+    font-size: 2rem;
+    opacity: 0.4;
+    color: var(--pink-deep);
+  }
+
+  .portfolio-views {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--pink-deep);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  .portfolio-info {
+    padding: 1rem 1.2rem;
+  }
+
+  .portfolio-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 4px;
+  }
+
+  .portfolio-tag {
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* BRANDS SECTION */
+  .brands {
+    padding: 4rem 6rem;
+    background: white;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brands-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+  }
+
+  .brands-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .brand-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 400;
+    min-width: 100px;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 6rem;
+    background: var(--pink-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .contact-left .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--pink-deep);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .contact-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-left h2 em {
+    font-style: italic;
+    color: var(--pink-deep);
+  }
+
+  .contact-left p {
+    font-size: 0.9rem;
+    color: var(--mid);
+    line-height: 1.85;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--mid);
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--pink-blush);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .contact-form {
+    background: white;
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 0.85rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    color: var(--dark);
+    background: var(--pink-light);
+    font-weight: 300;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: var(--pink-mid);
+  }
+
+  .form-group textarea { height: 110px; resize: vertical; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--pink-deep);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 0.5rem;
+  }
+
+  .submit-btn:hover {
+    background: #b03d6a;
+    transform: translateY(-1px);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.5);
+    padding: 2.5rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--pink-soft);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .footer-links a {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--pink-soft); }
+
+  .footer-copy {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.25);
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-left > * {
+    animation: fadeUp 0.7s ease both;
+  }
+
+  .hero-left > *:nth-child(1) { animation-delay: 0.1s; }
+  .hero-left > *:nth-child(2) { animation-delay: 0.2s; }
+  .hero-left > *:nth-child(3) { animation-delay: 0.3s; }
+  .hero-left > *:nth-child(4) { animation-delay: 0.4s; }
+  .hero-left > *:nth-child(5) { animation-delay: 0.5s; }
+
+  .ticker-wrap {
+    background: var(--pink-deep);
+    padding: 0.7rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker {
+    display: inline-block;
+    animation: ticker 20s linear infinite;
+  }
+
+  .ticker-item {
+    display: inline-block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: white;
+    font-weight: 400;
+    padding: 0 2rem;
+  }
+
+  .ticker-dot {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: var(--pink-soft);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Raegan Janise</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#niches">Content</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#contact" class="nav-cta">Work With Me</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="aka-badge">
+      <span class="aka-symbol">ΑΚΑ</span>
+      Alpha Kappa Alpha · Ivy Beyond the Wall
+    </div>
+    <h1 class="hero-name">
+      Raegan<br><em>Janise.</em>
+    </h1>
+    <p class="hero-tagline">
+      Lifestyle &amp; Content Creator · <span>Atlanta, GA</span> · 24
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">16.2K</span>
+        <span class="stat-label">TikTok Followers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1.4M</span>
+        <span class="stat-label">Total Likes</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1.3M</span>
+        <span class="stat-label">Peak Video Views</span>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Work With Me</a>
+      <a href="#portfolio" class="btn-outline">View My Work</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-deco-1"></div>
+    <div class="hero-deco-2"></div>
+    <div class="hero-deco-3">"</div>
+    <div class="hero-img-wrap">
+      <div class="hero-photo-placeholder">
+        <div style="font-size:3.5rem; opacity:0.35; color: var(--pink-deep);">&#9825;</div>
+        <p class="photo-label">Add your hero photo here<br><span style="font-size:0.65rem; opacity:0.7;">Recommended: full-length portrait, light background</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <span class="ticker-item">Fashion</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Beauty</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Lifestyle</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Bridal Content</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Pet Content</span><span class="ticker-dot"></span>
+    <span class="ticker-item">UGC Creator</span><span class="ticker-dot"></span>
+    <span class="ticker-item">TikTok Shop</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Atlanta, GA</span><span class="ticker-dot"></span>
+    <span class="ticker-item">2026 Bride</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Fashion</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Beauty</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Lifestyle</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Bridal Content</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Pet Content</span><span class="ticker-dot"></span>
+    <span class="ticker-item">UGC Creator</span><span class="ticker-dot"></span>
+    <span class="ticker-item">TikTok Shop</span><span class="ticker-dot"></span>
+    <span class="ticker-item">Atlanta, GA</span><span class="ticker-dot"></span>
+    <span class="ticker-item">2026 Bride</span><span class="ticker-dot"></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div>
+    <p class="about-label">About Raegan</p>
+    <h2 class="about-heading">Real life.<br><em>Real content.</em></h2>
+  </div>
+  <div>
+    <p class="about-text">
+      I'm Raegan — a 24-year-old lifestyle and content creator based in Atlanta, GA. I create relatable, authentic short-form content across fashion, beauty, bridal planning, and life with my mini goldendoodle Arlo. My content has a proven track record of virality, with videos reaching 1.3M+ views organically.
+    </p>
+    <p class="about-text">
+      Currently counting down to my May 2027 wedding, I'm documenting every detail — from digital save the dates to bridal beauty prep — giving brands a front-row seat to one of life's most shoppable seasons. I'm available for UGC video production, TikTok Shop affiliate partnerships, and gifted collaborations.
+    </p>
+    <div class="about-pills">
+      <span class="pill pill-pink">Fashion &amp; Style</span>
+      <span class="pill pill-pink">Beauty &amp; Skincare</span>
+      <span class="pill pill-pink">Bridal Content</span>
+      <span class="pill pill-pink">Pet Lifestyle</span>
+      <span class="pill pill-pink">Atlanta Creator</span>
+      <span class="pill pill-green">ΑΚΑ Soror</span>
+      <span class="pill pill-pink">2026 Bride</span>
+      <span class="pill pill-pink">UGC Creator</span>
+    </div>
+  </div>
+</section>
+
+<!-- NICHES -->
+<section class="niches" id="niches">
+  <div class="section-header">
+    <p class="label">Content Pillars</p>
+    <h2>What I <em>create</em></h2>
+  </div>
+  <div class="niche-grid">
+    <div class="niche-card">
+      <div class="niche-icon">👗</div>
+      <h3 class="niche-title">Fashion &amp; Style</h3>
+      <p class="niche-desc">Outfit checks, TikTok Shop hauls, and "found it for less" styling content. Authentic, wearable, and conversion-driven.</p>
+    </div>
+    <div class="niche-card">
+      <div class="niche-icon">✨</div>
+      <h3 class="niche-title">Beauty &amp; Skincare</h3>
+      <p class="niche-desc">GRWM videos, product demos, and wedding skin prep content. Real reviews from a real person — no filter on the honesty.</p>
+    </div>
+    <div class="niche-card">
+      <div class="niche-icon">💍</div>
+      <h3 class="niche-title">Bridal &amp; Wedding</h3>
+      <p class="niche-desc">May 2027 bride documenting everything — planning, shopping, and all the moments in between. #2026bride content at its peak.</p>
+    </div>
+    <div class="niche-card">
+      <div class="niche-icon">🐾</div>
+      <h3 class="niche-title">Pet Lifestyle</h3>
+      <p class="niche-desc">Life with Arlo, my mini goldendoodle. Cute, funny, and deeply relatable for the 67% of US households that own a pet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="numbers">
+  <div class="numbers-inner">
+    <div class="numbers-left">
+      <p class="label">By The Numbers</p>
+      <h2>Proven reach.<br>Real results.</h2>
+      <p>My audience is highly engaged — 1.4M total likes on 16.2K followers is a ratio most creators triple my size don't hit. When something resonates, it spreads. Brands get genuine placement, not vanity metrics.</p>
+    </div>
+    <div class="numbers-grid">
+      <div class="num-card">
+        <div class="num-val">16.2K</div>
+        <div class="num-label">Followers</div>
+      </div>
+      <div class="num-card">
+        <div class="num-val">1.4M</div>
+        <div class="num-label">Total Likes</div>
+      </div>
+      <div class="num-card">
+        <div class="num-val">1.3M</div>
+        <div class="num-label">Peak Video</div>
+      </div>
+      <div class="num-card">
+        <div class="num-val">478K</div>
+        <div class="num-label">2nd Highest</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-header">
+    <p class="label">Work With Me</p>
+    <h2>Services &amp; <em>Rates</em></h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-price">$150 <span>/ video</span></div>
+      <div class="service-name">UGC Video — 30 sec</div>
+      <div class="service-desc">Short-form video created for your brand's channels. Feels native, converts like organic.</div>
+      <ul class="service-features">
+        <li>Scripted or brief-based</li>
+        <li>1 round of revisions</li>
+        <li>Organic usage rights</li>
+        <li>5–7 day turnaround</li>
+      </ul>
+    </div>
+    <div class="service-card featured">
+      <div class="featured-tag">Most Popular</div>
+      <div class="service-price">$400 <span>/ bundle</span></div>
+      <div class="service-name">3-Video Bundle</div>
+      <div class="service-desc">Three short-form videos — ideal for campaigns, product launches, and A/B testing hooks.</div>
+      <ul class="service-features">
+        <li>3 x 30-sec videos</li>
+        <li>2 rounds of revisions</li>
+        <li>Organic usage rights</li>
+        <li>Hook variations included</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-price">$200 <span>/ video</span></div>
+      <div class="service-name">UGC Video — 60 sec</div>
+      <div class="service-desc">Tutorial, unboxing, demo, or storytelling format. Deeper product integration.</div>
+      <ul class="service-features">
+        <li>Tutorial or demo format</li>
+        <li>1 round of revisions</li>
+        <li>Organic usage rights</li>
+        <li>5–7 day turnaround</li>
+      </ul>
+    </div>
+  </div>
+  <p style="text-align:center; font-size:0.78rem; color:var(--muted); margin-top:1.5rem; font-weight:300;">
+    Add-ons: Paid ad usage rights +$75/30 days · Photo set (5 images) $100 · Raw footage +$50 · Rush delivery (48hr) +$50
+  </p>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="section-header">
+    <p class="label">Featured Content</p>
+    <h2>Recent <em>Work</em></h2>
+  </div>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <div class="portfolio-thumb" style="background: #fdf0f5;">
+        <div class="portfolio-thumb-icon">▶</div>
+        <div class="portfolio-views">1.3M views</div>
+      </div>
+      <div class="portfolio-info">
+        <div class="portfolio-title">Relatable life moment · viral POV</div>
+        <div class="portfolio-tag">Lifestyle · TikTok @raeganirl</div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-thumb" style="background: #fef0f5;">
+        <div class="portfolio-thumb-icon">▶</div>
+        <div class="portfolio-views">478K views</div>
+      </div>
+      <div class="portfolio-info">
+        <div class="portfolio-title">POV relatable reaction content</div>
+        <div class="portfolio-tag">Lifestyle · TikTok @raeganirl</div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-thumb" style="background: #fbeaf0;">
+        <div class="portfolio-thumb-icon">▶</div>
+        <div class="portfolio-views">253K views</div>
+      </div>
+      <div class="portfolio-info">
+        <div class="portfolio-title">Relatable storytelling moment</div>
+        <div class="portfolio-tag">Lifestyle · TikTok @raeganirl</div>
+      </div>
+    </div>
+  </div>
+  <p class="portfolio-note">Embed your top TikTok videos here using TikTok's embed code — link directly from your profile @raeganirl</p>
+</section>
+
+<!-- BRANDS -->
+<section class="brands">
+  <p class="brands-label">Open to collaborations with</p>
+  <div class="brands-row">
+    <div class="brand-slot">Fashion</div>
+    <div class="brand-slot">Beauty</div>
+    <div class="brand-slot">Bridal</div>
+    <div class="brand-slot">Pet Brands</div>
+    <div class="brand-slot">Skincare</div>
+    <div class="brand-slot">Lifestyle</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-left">
+    <p class="label">Get In Touch</p>
+    <h2>Let's work<br><em>together.</em></h2>
+    <p>Whether you're looking for UGC video content, TikTok Shop affiliate placement, or a gifted collaboration — I'd love to hear from you. I respond within 24–48 hours.</p>
+    <div class="contact-details">
+      <div class="contact-row">
+        <div class="contact-icon">✉</div>
+        <span>hello@raeganjanise.com</span>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📍</div>
+        <span>Atlanta, Georgia</span>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📱</div>
+        <span>@raeganirl on TikTok &amp; Lemon8</span>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Jane Smith">
+      </div>
+      <div class="form-group">
+        <label>Brand / Company</label>
+        <input type="text" placeholder="Brand Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="hello@yourbrand.com">
+    </div>
+    <div class="form-group">
+      <label>Collaboration Type</label>
+      <select>
+        <option>UGC Video Package</option>
+        <option>TikTok Shop Affiliate</option>
+        <option>Gifted Collaboration</option>
+        <option>Paid Partnership</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Tell Me About Your Campaign</label>
+      <textarea placeholder="Share your product, campaign goals, timeline, and any other details..."></textarea>
+    </div>
+    <button class="submit-btn">Send Inquiry</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Raegan Janise</div>
+  <ul class="footer-links">
+    <li><a href="https://tiktok.com/@raeganirl" target="_blank">TikTok</a></li>
+    <li><a href="https://lemon8-app.com/raeganirl" target="_blank">Lemon8</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <span class="footer-copy">© 2026 Raegan Janise · Atlanta, GA</span>
+</footer>
+
+</body>
+</html>
