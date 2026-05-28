@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raegan Janise — Lifestyle & Content Creator</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --pink-deep: #c94f7c;
@@ -31,9 +31,9 @@
   .nav-cta:hover { background: var(--pink-mid); transform: translateY(-1px); color: white !important; }
 
   .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; position: relative; overflow: hidden; }
-  .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 6rem; position: relative; z-index: 2; }
+  .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 4rem 4rem 4rem 6rem; position: relative; z-index: 2; }
   .hero-name { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 6vw, 5.5rem); line-height: 1.05; color: var(--dark); margin-bottom: 0.5rem; }
-  .hero-name em { color: var(--pink-deep); font-style: italic; }
+  .hero-name em { color: var(--pink-deep); font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.08em; font-weight: 300; letter-spacing: 0.02em; }
   .hero-tagline { font-size: 0.95rem; color: var(--muted); margin-bottom: 2.5rem; letter-spacing: 0.06em; font-weight: 400; }
   .hero-tagline span { color: var(--pink-mid); font-weight: 500; }
   .hero-stats { display: flex; gap: 2.5rem; margin-bottom: 2.5rem; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -57,7 +57,7 @@
   .ticker-dot { display: inline-block; width: 4px; height: 4px; background: var(--pink-soft); border-radius: 50%; vertical-align: middle; margin: 0 0.5rem; }
   @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-  .about { padding: 6rem; background: white; display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: center; }
+  .about { padding: 4.5rem 6rem; background: white; display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: center; }
   .about-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--pink-deep); font-weight: 500; margin-bottom: 1rem; }
   .about-heading { font-family: 'Playfair Display', serif; font-size: 2.8rem; line-height: 1.2; color: var(--dark); }
   .about-heading em { font-style: italic; color: var(--pink-deep); }
@@ -66,7 +66,7 @@
   .pill { padding: 0.45rem 1.1rem; border-radius: 40px; font-size: 0.75rem; letter-spacing: 0.06em; font-weight: 400; }
   .pill-pink { background: var(--pink-blush); color: var(--pink-deep); border: 1px solid var(--pink-soft); }
 
-  .niches { padding: 5rem 6rem; background: var(--pink-light); }
+  .niches { padding: 3.5rem 6rem; background: var(--pink-light); }
   .section-header { text-align: center; margin-bottom: 3.5rem; }
   .section-header .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--pink-deep); font-weight: 500; margin-bottom: 0.8rem; }
   .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--dark); line-height: 1.2; }
@@ -79,7 +79,7 @@
   .niche-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--dark); margin-bottom: 0.6rem; font-weight: 500; }
   .niche-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.7; font-weight: 300; }
 
-  .numbers { padding: 5rem 6rem; background: var(--pink-deep); color: white; }
+  .numbers { padding: 3.5rem 6rem; background: var(--pink-deep); color: white; }
   .numbers-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
   .numbers-left .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--pink-soft); font-weight: 500; margin-bottom: 1rem; }
   .numbers-left h2 { font-family: 'Playfair Display', serif; font-size: 2.4rem; line-height: 1.2; color: white; margin-bottom: 1.2rem; }
@@ -89,7 +89,7 @@
   .num-val { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: white; line-height: 1; margin-bottom: 6px; }
   .num-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--pink-soft); font-weight: 400; }
 
-  .services { padding: 6rem; background: white; }
+  .services { padding: 4.5rem 6rem; background: white; }
   .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3.5rem; }
   .service-card { border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem 2rem; position: relative; transition: border-color 0.2s, transform 0.2s; }
   .service-card:hover { border-color: var(--pink-mid); transform: translateY(-3px); }
@@ -103,7 +103,7 @@
   .service-features li { font-size: 0.78rem; color: var(--mid); display: flex; align-items: center; gap: 0.6rem; font-weight: 300; }
   .service-features li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--pink-mid); flex-shrink: 0; }
 
-  .portfolio { padding: 5rem 6rem; background: var(--cream); }
+  .portfolio { padding: 3.5rem 6rem; background: var(--cream); }
   .portfolio-note { text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 1rem; font-weight: 300; }
   .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
   .portfolio-item { background: white; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); transition: transform 0.2s; }
@@ -114,12 +114,12 @@
   .portfolio-title { font-size: 0.85rem; font-weight: 500; color: var(--dark); margin-bottom: 4px; }
   .portfolio-tag { font-size: 0.7rem; color: var(--muted); }
 
-  .brands { padding: 4rem 6rem; background: white; text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .brands { padding: 2.5rem 6rem; background: white; text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .brands-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); font-weight: 400; margin-bottom: 2.5rem; }
   .brands-row { display: flex; justify-content: center; align-items: center; gap: 3rem; flex-wrap: wrap; }
   .brand-slot { display: flex; align-items: center; justify-content: center; height: 40px; padding: 0 1.5rem; border: 1px solid var(--border); border-radius: 8px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 400; min-width: 100px; }
 
-  .contact { padding: 6rem; background: var(--pink-light); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .contact { padding: 4.5rem 6rem; background: var(--pink-light); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
   .contact-left .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--pink-deep); font-weight: 500; margin-bottom: 1rem; }
   .contact-left h2 { font-family: 'Playfair Display', serif; font-size: 2.6rem; color: var(--dark); line-height: 1.2; margin-bottom: 1.2rem; }
   .contact-left h2 em { font-style: italic; color: var(--pink-deep); }
@@ -210,7 +210,7 @@
     <span class="ticker-item">UGC Creator</span><span class="ticker-dot"></span>
     <span class="ticker-item">TikTok Shop</span><span class="ticker-dot"></span>
     <span class="ticker-item">Atlanta, GA</span><span class="ticker-dot"></span>
-    <span class="ticker-item">2026 Bride</span><span class="ticker-dot"></span>
+    <span class="ticker-item">2027 Bride</span><span class="ticker-dot"></span>
     <span class="ticker-item">Fashion</span><span class="ticker-dot"></span>
     <span class="ticker-item">Beauty</span><span class="ticker-dot"></span>
     <span class="ticker-item">Lifestyle</span><span class="ticker-dot"></span>
@@ -219,7 +219,7 @@
     <span class="ticker-item">UGC Creator</span><span class="ticker-dot"></span>
     <span class="ticker-item">TikTok Shop</span><span class="ticker-dot"></span>
     <span class="ticker-item">Atlanta, GA</span><span class="ticker-dot"></span>
-    <span class="ticker-item">2026 Bride</span><span class="ticker-dot"></span>
+    <span class="ticker-item">2027 Bride</span><span class="ticker-dot"></span>
   </div>
 </div>
 
@@ -283,7 +283,7 @@
       <div class="num-card"><div class="num-val">16.2K</div><div class="num-label">Followers</div></div>
       <div class="num-card"><div class="num-val">1.4M</div><div class="num-label">Total Likes</div></div>
       <div class="num-card"><div class="num-val">1.3M</div><div class="num-label">Peak Video</div></div>
-      <div class="num-card"><div class="num-val">478K</div><div class="num-label">2nd Highest</div></div>
+      <div class="num-card"><div class="num-val">914.9K</div><div class="num-label">2nd Highest</div></div>
     </div>
   </div>
 </section>
@@ -295,7 +295,7 @@
   </div>
   <div class="services-grid">
     <div class="service-card">
-      <div class="service-price">$150 <span>/ video</span></div>
+      <div class="service-price">$300–$400 <span>/ video</span></div>
       <div class="service-name">UGC Video — 30 sec</div>
       <div class="service-desc">Short-form video created for your brand's channels. Feels native, converts like organic.</div>
       <ul class="service-features">
@@ -307,7 +307,7 @@
     </div>
     <div class="service-card featured">
       <div class="featured-tag">Most Popular</div>
-      <div class="service-price">$400 <span>/ bundle</span></div>
+      <div class="service-price">$900–$1,000 <span>/ bundle</span></div>
       <div class="service-name">3-Video Bundle</div>
       <div class="service-desc">Three short-form videos — ideal for campaigns, product launches, and A/B testing hooks.</div>
       <ul class="service-features">
@@ -318,7 +318,7 @@
       </ul>
     </div>
     <div class="service-card">
-      <div class="service-price">$200 <span>/ video</span></div>
+      <div class="service-price">$500–$600 <span>/ video</span></div>
       <div class="service-name">UGC Video — 60 sec</div>
       <div class="service-desc">Tutorial, unboxing, demo, or storytelling format. Deeper product integration.</div>
       <ul class="service-features">
@@ -330,7 +330,7 @@
     </div>
   </div>
   <p style="text-align:center; font-size:0.78rem; color:var(--muted); margin-top:1.5rem; font-weight:300;">
-    Add-ons: Paid ad usage rights +$75/30 days &nbsp;·&nbsp; Photo set (5 images) $100 &nbsp;·&nbsp; Raw footage +$50
+    Add-ons: Paid ad usage rights +$200/30 days &nbsp;·&nbsp; Photo set (5 images) $250 &nbsp;·&nbsp; Raw footage +$75
   </p>
 </section>
 
@@ -353,7 +353,7 @@
     <div class="portfolio-item">
       <div class="portfolio-thumb" style="background:#fef0f5;">
         <div style="font-size:2rem;opacity:0.35;color:var(--pink-deep);">▶</div>
-        <div class="portfolio-views">478K views</div>
+        <div class="portfolio-views">914.9K views</div>
       </div>
       <div class="portfolio-info">
         <div class="portfolio-title">POV relatable reaction content</div>
